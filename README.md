@@ -1,9 +1,23 @@
-# RailBook - Booking Service
+<div align="center">
 
-Part of **RailBook**, a microservices based train ticket reservation system (BITS WILP, SEZG583 Scalable Services, 2025MT03101).
+# 🎫 RailBook — Booking Service
+
+[![CI](https://github.com/anubhav1941/booking-service/actions/workflows/ci.yml/badge.svg)](https://github.com/anubhav1941/booking-service/actions/workflows/ci.yml)
+![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=flat-square&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+
+</div>
+
+Part of **RailBook**, a microservices train ticket reservation system.
+See [**railbook-deploy**](https://github.com/anubhav1941/railbook-deploy) for the architecture, Kubernetes manifests and full-system setup,
+and [**inventory-service**](https://github.com/anubhav1941/inventory-service) for the seat inventory service.
 
 Owns bookings and passengers (PNR). Orchestrates the booking saga:
 hold seats in `inventory-service` (REST) → take payment (mocked) → confirm, or compensate by releasing seats.
+
+> Academic project: BITS WILP, SEZG583 Scalable Services (2025MT03101).
 
 ## Tech
 Python 3.12, FastAPI, SQLAlchemy 2, PostgreSQL 16, httpx (REST client), Docker, Kubernetes.
